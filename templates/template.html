@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: rgb(255, 255, 255); height:100vh; margin-top: 50px;">
+    <h2 style="text-align: center;">Hello User's!</h2>
+
+    <div style="display: flex;justify-content: center;align-items: center;width: 100%"> 
+    <form action="/login_" method="post" style="border: 2px solid black; display: flex; gap: 20px;padding: 20px; flex-direction: column; box-shadow: 0 2px 10px rgba(0,0,0,0.8);">
+    <input name="username" type="text"  placeholder="Enter User name"/>
+    <input  name="password" type="password" placeholder="Enter your Password">
     
-    <form action="/login_backlink" method="post">
-        <h2 style="text-align: center;">Hello User's!</h2>
-    <input type="text"  placeholder="Enter User name"/> <br><br>
-    <input type="text" placeholder="Enter your Password"> <br>
-    <br>
     <button type="submit">login</button>
     </form>
+</div>
 </body>
 </html>

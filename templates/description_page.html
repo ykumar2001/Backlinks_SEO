@@ -8,12 +8,17 @@
 </head>
 <body>
     <h2 style="text-align: center;"> "submit a Description"</h2>
-    <form action="/description_page",method="post">
-        <textarea name="Description" rows="5" cols="40" placeholder="Enter your description here..." required></textarea>
+    <form action="/description_page" method="POST">
+        <label for="description_page">Description:</label>
+        <textarea name="description" rows="5" cols="40" placeholder="Enter your description here..." required></textarea>
         <br><br>
         <button type="submit">submit</button>
 
 
     </form>
+
+
+<a href="/logout" class=""> Logout</a>
+
 </body>
 </html>

@@ -1,0 +1,13 @@
+    # VSCode
+.vscode/
+
+# JetBrains IDEs (PyCharm, IntelliJ, etc.)
+.idea/
+
+# Sublime Text
+*.sublime-*
+
+# Eclipse
+.metadata/
+.classpath
+.project

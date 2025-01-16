@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Backlinks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+        }
+        .form-container {
+            width: 500px;
+            background-color: #fff;
+            padding: 40px 50px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            border-radius: 15px;
+            text-align: center;
+        }
+        .form-container h2 {
+            margin-bottom: 25px;
+            font-size: 35px;
+            font-weight: 600;
+            color: #000000;
+        }
+        .form-container label {
+            display: block;
+            text-align: left;
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #000000;
+        }
+        .form-container input[type="text"] {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        .form-container button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+        .button-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .button-container a {
+            text-decoration: none;
+            padding: 10px 35px;
+            border-radius: 12px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+        /* .logout-btn {
+            background-color: #840c18;
+        } */
+        /* .logout-btn:hover {
+            background-color: #a71d2a;
+        } */
+        .next-btn {
+            background-color: #3c6c0b;
+        }
+        .next-btn:hover {
+            background-color: #1e7e34;
+        }
+    </style>
+</head>
+<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <div class="button-container">
+        <a href="/logout" class="logout-btn btn-secondary">Logout</a>
+        <a href="/backlink-page" class="next-btn">Next</a>
+    </div>
+    <div class="form-container">
+        <h2>SEO Backlinks</h2>
+        <form action="/description_page" method="POST">
+            <label for="keyword">Keyword Name</label>
+            <input type="text" id="keyword" name="keywords_name" placeholder="Enter your keyword here" required>
+
+            <label for="backlink">Backlink URL</label>
+            <input type="text" id="backlink" name="backlink_url" placeholder="Enter your URL here" required>
+
+            <label for="domain">Domain URL</label>
+            <input type="text" id="domain" name="domain_url" placeholder="Enter your domain URL here" required>
+
+            <label for="submitted">Submitted URL</label>
+            <input type="text" id="submitted" name="submitted_url" placeholder="Enter your submitted URL here" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
